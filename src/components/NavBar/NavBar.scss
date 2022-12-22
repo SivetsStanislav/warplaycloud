@@ -1,0 +1,48 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+
+    width: 1440px;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+
+    background: #141C24;
+
+    .logo__blue {
+        margin-left: 113px;
+        margin-top: 47px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 106px;
+        padding-right: 171px;
+        width: 100%;
+        margin-top: 45px;
+
+        list-style-type: none;
+
+        .navBar__list-item {
+            text-decoration: none;
+            text-align: center;
+
+            height: 29px;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+
+            color: #FFFFFF;
+        }
+
+        .navBar__list-item:first-child {
+            border-bottom: 1px solid #00C5FF;
+        }
+    }
+}

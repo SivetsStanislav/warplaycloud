@@ -1,4 +1,6 @@
 .App {
     display: block;
     background-color: rgba(20, 28, 36, 1);
+    z-index: 0;
+    height: 1000px;
 }
