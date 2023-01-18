@@ -1,0 +1,38 @@
+.icons__conatiner {
+    height: 108px;
+    width: 848px;
+
+    margin-top: 90px;
+
+    .icons__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .icon__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon__text {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 21.33px;
+                line-height: 150%;
+
+                margin-top: 12px;
+
+                color: #F1F1F1;
+            }
+        }
+
+        .icon__hr {
+            border-top: 1px solid rgba(87, 214, 255, 1);
+            width: 73px;
+            z-index: 2;
+
+            margin-top: 32px;
+        }
+    }
+}
