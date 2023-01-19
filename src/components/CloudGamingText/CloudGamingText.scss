@@ -3,45 +3,8 @@
     flex-direction: column;
     width: 480px;
 
-    &__section-name {
-        display: flex;
-        align-items: center;
-
-        .section-name__hr {
-            border-top: 1px solid rgba(87, 214, 255, 1);
-            width: 50px;
-            z-index: 2;
-        }
-
-        .section-name {
-            width: 140px;
-            height: 29px;
-            margin: 0px 0px 0px 34px;
-
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 180%;
-
-            color: #57D6FF;
-        }
-    }
-
-    &__head {
-        width: 255px;
-        height: 39px;
-
-        .head {
-            margin: 17px 0px 0px 0px;
-
-            font-style: normal;
-            font-weight: 400;
-            font-size: 39px;
-            line-height: 39px;
-            white-space: nowrap;
-
-            color: #FFFFFF;
-        }
+    .section-head {
+        margin-top: 17px;
     }
 
     &__text {
@@ -65,28 +28,7 @@
         }
     }
 
-    &__download {
+    .button {
         margin-top: 74px;
-
-        .download-button {
-            width: 80px;
-            height: 25px;
-            padding: 0px 0px 6px 0px;
-            margin-top: 16px;
-            border: none;
-            border-bottom: 1px solid #00C5FF;
-
-            color: rgba(0, 197, 255, 1);
-            background-color: transparent;
-
-            &__text {
-                margin: 0px;
-
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
-            }
-        }
     }
 }

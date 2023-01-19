@@ -1,6 +1,8 @@
 import React from 'react';
 import QuickStartIcons from '../QuickStartIcons/QuickStartIcons';
 import './QuickStart.scss';
+import '../styles.scss';
+
 
 function QuickStart() {
     return (
@@ -11,8 +13,8 @@ function QuickStart() {
             </div>
             <h2 className='section-head'>Начни играть</h2>
             <QuickStartIcons />
-            <button className='download-button'>
-                    <h3 className='download-button__text'>Начать</h3>
+            <button className='button'>
+                    <h3 className='button__text'>Начать</h3>
             </button>
         </div>
     );
