@@ -1,0 +1,33 @@
+.browser {
+    display: flex;
+    box-sizing: border-box;
+
+    margin: 245px 0px 0px 135px;
+
+    &__shadowl {
+        position: absolute;
+        width: 461px;
+        height: 461px;
+        left: 950px;
+
+        background: rgba(0, 185, 239, 0.15);
+        filter: blur(125px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    &__shadowll {
+        position: absolute;
+        width: 461px;
+        height: 461px;
+        left: 1053px;
+
+        background: rgba(0, 0, 0, 0.25);
+        filter: blur(100px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    }
+
+    .image-browser__container {
+        margin-top: -17px;
+    }
+}
