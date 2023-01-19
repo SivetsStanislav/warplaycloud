@@ -1,0 +1,123 @@
+    .subscriptiones-rates__container {
+        width: 1220px;
+        height: 593px;
+
+        margin-top: 30px;
+
+        .shadow {
+            position: absolute;
+            width: 246px;
+            height: 246px;
+            top: 2206px;
+            left: 44%;
+
+            background: rgba(0, 197, 255, 0.15);
+            filter: blur(78px);
+        }
+        .subscriptiones-rates {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .rate {
+                display: flex;
+                flex-direction: column;
+
+                width: 400px;
+                height: 543px;
+                margin-top: 50px;
+                padding-left: 37px;
+
+                background: #1F2631;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+
+                .text-wrapper {
+                    padding-left: 10px;
+                    padding-top: 76px;
+
+                    &__header {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 42px;
+    
+                        color: #FFFFFF;
+                    }
+
+                    &__price {
+                        margin-top: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+    
+                        color: #FFFFFF;
+                    }
+    
+                    &__info {
+                        margin-top: 22px;
+
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 21.33px;
+                        line-height: 150%;
+    
+                        color: #ABABAB;
+                    }
+                }
+
+                &__button {
+                    display: flex;
+                    height: 100%;
+
+                    padding-bottom: 47px;
+
+                    button {
+                        align-self: flex-end;
+                        width: 321px;
+                        height: 70px;
+    
+                        background: #00C5FF;
+                        border-radius: 5px;
+    
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 180%;
+    
+                        color: #141C24;
+                    }
+                }
+
+                .dark {
+
+                    button {
+                        background: #141C24;
+
+                        color: #F1F8FF;
+                    }
+                }
+            }
+
+            .rate:nth-child(2) {
+                background: #00C5FF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                .text-wrapper {
+
+                    &__header {
+                        color: #141C24;
+                    }
+
+                    &__price {
+                        color: #141C24;
+                    }
+    
+                    &__info {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
