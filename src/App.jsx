@@ -6,6 +6,7 @@ import QuickStart from './components/QuickStart/QuickStart';
 import Subscriptiones from './components/Subscriptiones/Subscriptiones';
 import Browser from './components/Browser/Browser';
 import GameServers from './components/GameServers/GameServers';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Subscriptiones />
       <Browser />
       <GameServers />
+      <Footer />
     </div>
   );
 }

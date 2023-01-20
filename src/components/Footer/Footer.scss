@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 150px;
+    margin-top: 87px;
+
+    background: #171717;
+
+    .footer-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .list-item {
+            font-style: normal;
+            font-weight: 200;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #FFFFFF;
+
+            .arrow {
+                font-weight: 900;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .left {
+        margin-left: 150px;
+        width: 33%;
+    }
+
+    .right {
+        margin-right: 87px;
+        width: 30%;
+    }
+}
