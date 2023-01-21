@@ -1,25 +1,19 @@
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage/HomePage';
+import RegistrationPage from './components/RegistrationPage/RegistrationPage';
+
 import './reset.css';
-import Header from './components/Header/Header';
-import CloudGaming from './components/CloudGaming/CloudGaming';
-import QuickStart from './components/QuickStart/QuickStart';
-import Subscriptiones from './components/Subscriptiones/Subscriptiones';
-import Browser from './components/Browser/Browser';
-import GameServers from './components/GameServers/GameServers';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
-      <CloudGaming />
-      <QuickStart />
-      <Subscriptiones />
-      <Browser />
-      <GameServers />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<HomePage />}/>
+        <Route path='/registration' element={<RegistrationPage />}/>
+      </Routes>
+    </>
   );
 }
 
-export default App;
+export default React.memo(App);

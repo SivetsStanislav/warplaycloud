@@ -1,7 +1,11 @@
 import React from 'react';
+import ChouseButton from './ChouseButton/ChouseButton';
 import './SubscriptionesRate.scss'
 
 function SubscriptionesRate() {
+    //const blue = 'blue';
+    //const dark = 'dark';
+
     return (
         <div className='subscriptiones-rates__container'>
             <div className='shadow'></div>
@@ -20,7 +24,7 @@ function SubscriptionesRate() {
                         </h5>
                     </div>
                     <div className='rate__button'>
-                        <button className='button'>Выбрать</button>
+                        <ChouseButton colour='blue'/>
                     </div>
                 </li>
                 <li className='rate'>
@@ -36,8 +40,8 @@ function SubscriptionesRate() {
                             Игровая сессия 10 часов/день<br />
                         </h5>
                     </div>
-                    <div className='rate__button dark'>
-                        <button className='button'>Выбрать</button>
+                    <div className='rate__button'>
+                        <ChouseButton colour='dark'/>
                     </div>
                 </li>
                 <li className='rate'>
@@ -53,7 +57,7 @@ function SubscriptionesRate() {
                         </h5>
                     </div>
                     <div className='rate__button'>
-                        <button className='button'>Выбрать</button>
+                        <ChouseButton colour='blue'/>
                     </div>
                 </li>
             </ul>
