@@ -14,12 +14,19 @@
     .modal-content {
         display: flex;
         justify-content: center;
+        border-radius: 10px;
         background-color: #00C5FF;
         width: 500px;
         height: 100px;
 
         .modal-greetings {
             margin-top: 35px;
+
+            font-family: 'Aire Exterior';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 180%;
         }
     }
 }

@@ -1,12 +1,10 @@
 .header {
     display: flex;
-    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
 
     width: 1440px;
     margin: 0px auto;
-    z-index: -4;
 
     .vl__top {
         border-left: 1px solid white;
@@ -19,56 +17,55 @@
         border-left: 1px solid white;
         height: 132px;
         z-index: 2;
-        margin-top: 541px;
+        margin-top: 130px;
     }
 
-    .header-text {
-        position: absolute;
-        width: 216px;
-        height: 19px;
-        top: 413px;
-        left: 863px;
-        margin: 0px;
-        z-index: 2;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
+        margin-top: 186px;
 
-        color: #FFFFFF;
-    }
-
-    .header-title {
-        position: absolute;
-        width: 632px;
-        height: 48px;
-        top: 432px;
-        left: 404px;
-        z-index: 2;
-        margin: 0px;
-
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 48px;
-        white-space: nowrap;
-
-        color: #FFFFFF;
+        .header-text {
+            margin: 0px;
+            z-index: 2;
+    
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+    
+            color: #FFFFFF;
+        }
+    
+        .header-title {
+            z-index: 2;
+            margin: 0px;
+    
+            font-family: 'Aire Exterior';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 48px;
+            white-space: nowrap;
+    
+            color: #FFFFFF;
+        }
     }
 
     .header-button {
         z-index: 2;
-        position: absolute;
-        width: 251px;
-        height: 61px;
-        
-        top: 577px;
+        width: 250px;
+        height: 60px;
 
         border: 0px;
         padding: 0px;
+        margin-top: 97px;
         clip-path: polygon(0% 0%, 92% 0, 100% 35%, 100% 100%, 0% 100%);
 
+        font-family: 'Aire Exterior';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;

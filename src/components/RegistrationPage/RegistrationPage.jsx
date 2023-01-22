@@ -1,5 +1,6 @@
 import React from 'react';
 import RegistrationForm from '../UI/RegistrationForm/RegistrationForm';
+import SocialMedia from '../UI/SocialMedia/SocialMedia';
 import './RegistrationPage.scss';
 
 function RegistrationPage() {
@@ -12,6 +13,12 @@ function RegistrationPage() {
                     <p className='login'>Вход</p>
                 </div>
                 <RegistrationForm />
+                <div className='social-media'>
+                    <div className='social-media__hr'></div>
+                    <h7 className='social-media__text'>Войти через</h7>
+                    <div className='social-media__hr'></div>
+                </div>
+                <SocialMedia />
             </div>
         </div>
     );

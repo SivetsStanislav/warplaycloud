@@ -3,9 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
 
+import './RegistrationForm.scss';
+
 function RegistrationForm() {
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [checked, setChecked] = useState(false);
     const [userName, setUserName] = useState('')
     const navigate = useNavigate();
 
@@ -48,8 +51,8 @@ function RegistrationForm() {
         );
 
     const renderForm = (
-        <div className="form">
-            <form onSubmit={handleSubmit}>
+        <div className="form-container">
+            <form className='form-main' onSubmit={handleSubmit}>
                 <div className="input-container">
                     <input
                         className="input"
@@ -76,19 +79,35 @@ function RegistrationForm() {
                     <input
                         className="reg-button"
                         type="submit"
-                        value="Зарегестрироваться"
+                        value="Зарегистрироваться"
                     />
                 </div>
             </form>
+            <div className='checkbox-container'>
+                <input
+                    className='checkbox'
+                    type="checkbox"
+                    checked={checked}
+                    onChange={() => setChecked(!checked)}
+                />
+                <h7 className='licence'>
+                   Я соглашаюсь со следующими установленными правилами:<br />
+                   Политика использования файлов cookie WARPLAY.CLOUD,<br />
+                   Пользовательское соглашение WARPLAY.CLOUD, Лицензионное<br />
+                   соглашение MY.GAMES с конечным пользователем в отношении Игр,<br />
+                   Лицензионное соглашение с конечным Пользователем для<br />
+                   WARPLAY.CLOUD Игрового центра, Политика конфиденциальности<br />
+                   портала WARPLAY.CLOUD, Политика конфиденциальности<br />
+                   WARPLAY.CLOUD для детей<br />
+                </h7>
+            </div>
         </div>
     );
 
     return (
-      <div className="registration-form">
-          <div className="login-form">
-              {isSubmitted ? <Modal userName={userName} /> : renderForm}
-          </div>
-      </div>
+        <div className="registration-form">
+            {isSubmitted ? <Modal userName={userName} /> : renderForm}
+        </div>
     );
 }
 

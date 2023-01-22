@@ -1,0 +1,84 @@
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-container {
+        margin-top: 32px;
+
+        .form-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .input-container {
+
+                .input {
+                    width: 390px;
+                    height: 75px;
+
+                    background: #FFFFFF;
+                    border-radius: 5px;
+
+                    font-family: 'Aire Exterior';
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 24px;
+                    padding-left: 24px;
+
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            .button-container {
+                margin-top: 30px;
+
+                .reg-button {
+                    width: 250px;
+                    height: 60px;
+
+                    border: 0px;
+                    padding: 0px;
+                    clip-path: polygon(0% 0%, 92% 0, 100% 35%, 100% 100%, 0% 100%);
+
+                    font-family: 'Aire Exterior';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 24px;
+
+                    background: #FFFFFF;
+                }
+            }
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            margin-top: 55px;
+            width: 485px;
+
+            .checkbox {
+                margin: 0px;
+                border: none;
+                height: 24px;
+                width: 24px;
+            }
+
+            .licence {
+                margin-left: 19px;
+
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 12px;
+                line-height: 14px;
+
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+}
+

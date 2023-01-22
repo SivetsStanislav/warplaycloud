@@ -1,4 +1,6 @@
 .home-page {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     background-color: rgba(20, 28, 36, 1);
 }

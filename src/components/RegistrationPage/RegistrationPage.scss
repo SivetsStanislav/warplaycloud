@@ -1,8 +1,78 @@
 .registration-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 125px;
 
-    width: 1440px;
-    margin: auto;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 640px;
+        width: 485px;
+
+        margin: auto;
+
+        .container__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .arrow {
+                width: 12px;
+                height: 12px;
+
+                border-bottom: 3px solid #ffffff;
+                border-left: 3px solid #ffffff;
+                transform: rotate(45deg);
+            }
+
+            .registration {
+                font-family: 'Aire Exterior';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 48px;
+
+                margin-left: 60px;
+
+                color: #FFFFFF;
+            }
+
+            .login {
+                font-family: 'Aire Exterior';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 48px;
+
+                margin-left: 40px;
+
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .social-media {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 324px;
+            margin-top: 42px;
+
+            &__hr {
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                width: 117px;
+            }
+
+            &__text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 12px;
+                line-height: 14px;
+
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
 }

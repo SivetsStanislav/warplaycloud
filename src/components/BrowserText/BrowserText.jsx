@@ -7,7 +7,7 @@ function BrowserText() {
         <div className='browser-text'>
             <div className='section-name__wrapper'>
                 <div className='section-name__hr'></div>
-                <h6 className='section-name'>Игарть можно в браузере</h6>
+                <h6 className='section-name'>Играть можно в браузере</h6>
             </div>
             <h2 className='section-head'>
                 Запускай на любых<br />

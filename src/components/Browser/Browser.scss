@@ -1,33 +1,26 @@
 .browser {
     display: flex;
-    box-sizing: border-box;
 
-    margin: 245px 0px 0px 135px;
+    padding-top: 245px;
+    padding-bottom: 421px;
 
-    &__shadowl {
+    background: url('../../pictures/siteImages/sky.png'),
+                url('../../pictures/siteImages/car.png'),
+                url('../../pictures/siteImages/stalker.png');
+    background-repeat: no-repeat;
+    background-position: left 950px top 252px,
+                         left 640px top 228px,
+                         left 881px top 493px;
+
+    .shadowl {
         position: absolute;
+        left: 951px;
+        top: 3063px;
         width: 461px;
         height: 461px;
-        left: 950px;
 
         background: rgba(0, 185, 239, 0.15);
         filter: blur(125px);
         transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
-
-    &__shadowll {
-        position: absolute;
-        width: 461px;
-        height: 461px;
-        left: 1053px;
-
-        background: rgba(0, 0, 0, 0.25);
-        filter: blur(100px);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-
-    }
-
-    .image-browser__container {
-        margin-top: -17px;
     }
 }

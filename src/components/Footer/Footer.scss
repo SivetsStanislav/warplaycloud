@@ -16,12 +16,13 @@
         align-items: center;
 
         .list-item {
+            font-family: 'Roboto';
             font-style: normal;
             font-weight: 200;
             font-size: 12px;
             line-height: 14px;
 
-            color: #FFFFFF;
+            color: rgba(255, 255, 255, 0.5);
 
             .arrow {
                 font-weight: 900;
