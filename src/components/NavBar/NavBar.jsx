@@ -1,13 +1,10 @@
 import React from 'react';
 import './NavBar.scss';
-import logo from '../../pictures/logo/BlueLogo.png'
 
 function NavBar() {
     return (
         <div className='navBar'>
-            <div className='logo__blue'>
-                <img src={logo} alt='blue-logo' />
-            </div>
+            <div className='logo__blue'></div>
             <ul className='navBar__list'>
                 <li className='navBar__list-item'>Главная</li>
                 <li className='navBar__list-item'>Сервера</li>

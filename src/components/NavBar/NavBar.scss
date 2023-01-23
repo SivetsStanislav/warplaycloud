@@ -7,10 +7,18 @@
     z-index: 2;
 
     background: #141C24;
+    @media only screen and (max-width: 1439px) {
+        display: none;
+      }
 
     .logo__blue {
-        margin-left: 113px;
         margin-top: 47px;
+        width: 410px;
+        height: 135px;
+        background-image: url(../../pictures/logo/BlueLogo.png);
+        background-repeat: no-repeat;
+        background-position: left 113px top 0px;
+        z-index: 5;
     }
 
     &__list {
@@ -18,10 +26,11 @@
         flex-direction: row;
         justify-content: space-between;
 
-        padding-left: 106px;
         padding-right: 171px;
+        padding-left: 113px;
         width: 100%;
         margin-top: 45px;
+        z-index: 4;
 
         list-style-type: none;
 

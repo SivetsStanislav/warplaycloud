@@ -13,8 +13,8 @@ function RegistrationForm() {
     const navigate = useNavigate();
 
     const errors = {
-        uname: "invalid username",
-        pass: "invalid password"
+        uname: "Неверный логин",
+        pass: "Пароль должен содержать 8-15 символов (числа, латиница)"
     };
 
     const handleUser = (e) => setUserName(e.target.value)
@@ -71,6 +71,7 @@ function RegistrationForm() {
                         type="password"
                         name="pass"
                         placeholder="Пароль"
+                        maxLength="15"
                         required
                     />
                     {renderErrorMessage("pass")}
