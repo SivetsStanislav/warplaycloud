@@ -1,5 +1,10 @@
 .registration-page {
     margin-top: 125px;
+    @media only screen and (max-width: 1439px) {
+        width: 360px;
+        height: 982px;
+        margin-top: 82px;
+    }
 
     &__container {
         display: flex;
@@ -10,15 +15,25 @@
         width: 485px;
 
         margin: auto;
+        @media only screen and (max-width: 1439px) {
+            width: 324px;
+            align-items: flex-start;
+        }
 
         .container__header {
             display: flex;
             flex-direction: row;
             align-items: center;
+            @media only screen and (max-width: 1439px) {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 233px;
+                margin-left: 20px;
+            }
 
             .arrow {
-                width: 12px;
-                height: 12px;
+                width: 15px;
+                height: 15px;
 
                 border-bottom: 3px solid #ffffff;
                 border-left: 3px solid #ffffff;
@@ -35,6 +50,10 @@
                 margin-left: 60px;
 
                 color: #FFFFFF;
+                @media only screen and (max-width: 1439px) {
+                    margin-left: 17px;
+                    margin-top: 56px;
+                }
             }
 
             .login {
@@ -47,6 +66,9 @@
                 margin-left: 40px;
 
                 color: rgba(255, 255, 255, 0.5);
+                @media only screen and (max-width: 1439px) {
+                    margin-left: 17px;
+                }
             }
         }
 
@@ -58,10 +80,17 @@
 
             width: 324px;
             margin-top: 42px;
+            @media only screen and (max-width: 1439px) {
+                margin-top: 68px;
+            }
 
             &__hr {
                 border-top: 1px solid rgba(255, 255, 255, 0.5);
                 width: 117px;
+                @media only screen and (max-width: 1439px) {
+                    border-top: none;
+                    width: 0px;
+                }
             }
 
             &__text {

@@ -2,9 +2,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media only screen and (max-width: 1439px) {
+        width: 324px;
+        margin-top: 51px;
+    }
 
     .form-container {
         margin-top: 32px;
+        @media only screen and (max-width: 1439px) {
+            margin-top: 0px;
+        }
 
         .form-main {
             display: flex;
@@ -27,6 +34,9 @@
                     padding-left: 24px;
 
                     color: rgba(0, 0, 0, 0.5);
+                    @media only screen and (max-width: 1439px) {
+                        width: 324px;
+                    }
                 }
 
                 .error {
@@ -40,8 +50,17 @@
                 }
             }
 
+            .input-container:nth-child(2) {
+                @media only screen and (max-width: 1439px) {
+                    margin-top: 15px;
+                }
+            }
+
             .button-container {
                 margin-top: 30px;
+                @media only screen and (max-width: 1439px) {
+                    margin-top: 39px;
+                }
 
                 .reg-button {
                     width: 250px;
@@ -69,15 +88,23 @@
 
             margin-top: 55px;
             width: 485px;
+            @media only screen and (max-width: 1439px) {
+                justify-content: flex-start;
+                width: 324px;
+            }
 
             .checkbox {
                 margin: 0px;
                 border: none;
                 height: 24px;
                 width: 24px;
+                @media only screen and (max-width: 1439px) {
+                    margin-left: 13px;
+                }
             }
 
             .licence {
+                width: 382px;
                 margin-left: 19px;
 
                 font-family: 'Roboto';
@@ -87,6 +114,10 @@
                 line-height: 14px;
 
                 color: rgba(255, 255, 255, 0.5);
+                @media only screen and (max-width: 1439px) {
+                    width: 271px;
+                    margin-left: 16px;
+                }
             }
         }
     }

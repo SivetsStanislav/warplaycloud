@@ -1,5 +1,8 @@
 .social-media-icons {
     margin-top: 19px;
+    @media only screen and (max-width: 1439px) {
+        align-self: center;
+    }
     .icons-list {
         display: grid;
         grid-template-columns: repeat(5, 25px);
