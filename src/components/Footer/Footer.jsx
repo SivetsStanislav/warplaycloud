@@ -7,8 +7,8 @@ import './Footer.scss';
 function Footer() {
     return (
         <div className='footer'>
-            <div className='logo__white'></div>
             <div className='footer__container'>
+                <div className='logo__white'></div>
                 <ul className='footer-list left'>
                     <li className='list-item'>
                         <img src={allRightsReserved} alt='all Rights Reserved' />
@@ -18,6 +18,7 @@ function Footer() {
                     </li>
                 </ul>
                 <ul className='footer-list right'>
+                    <li className='list-item'>Контакты</li>
                     <li className='list-item'>Политика конфиденциальности</li>
                     <li className='list-item'>Файлы Coocie</li>
                     <li className='list-item icons'>

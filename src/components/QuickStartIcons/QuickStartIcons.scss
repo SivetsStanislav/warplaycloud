@@ -3,19 +3,31 @@
     width: 848px;
 
     margin-top: 90px;
+    @media only screen and (max-width: 1439px) {
+        width: 336px;
+        height: 300px;
+    }
 
     .icons__list {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media only screen and (max-width: 1439px) {
+            flex-wrap: wrap;
+        }
 
         .icon__container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            @media only screen and (max-width: 1439px) {
+                width: 120px;
+                height: 90px;
+            }
 
             .icon__text {
+                font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 21.33px;
@@ -24,6 +36,11 @@
                 margin-top: 12px;
 
                 color: #F1F1F1;
+                @media only screen and (max-width: 1439px) {
+                    margin-top: 0px;
+                    height: 30px;
+                    width: 70px;
+                }
             }
         }
 
@@ -33,6 +50,17 @@
             z-index: 2;
 
             margin-top: 32px;
+            @media only screen and (max-width: 1439px) {
+                width: 58px;
+            }
+        }
+
+        .icon__hr:nth-child(4) {
+            @media only screen and (max-width: 1439px) {
+                width: 170px;
+                transform: rotate(135deg);
+                margin: 40px 0px 80px 80px;
+            }
         }
     }
 }

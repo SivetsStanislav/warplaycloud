@@ -6,6 +6,10 @@
 
     width: 1440px;
     margin: 154px auto 0px auto;
+    @media only screen and (max-width: 1439px) {
+        width: 360px;
+        margin: 113px auto 0px auto;
+    }
 
     .section-head {
         margin-top: 15px;
@@ -16,5 +20,8 @@
         width: 582px;
 
         margin-top: 90px;
+        @media only screen and (max-width: 1439px) {
+            display: none;
+        }
     }
 }

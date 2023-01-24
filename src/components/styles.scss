@@ -6,12 +6,18 @@
     line-height: 39px;
     white-space: nowrap;
     color: #FFFFFF;
+    @media only screen and (max-width: 1439px) {
+        align-self: center;
+    }
 }
 
 .section-name__wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media only screen and (max-width: 1439px) {
+        justify-content: center;
+    }
 
     .section-name__hr {
         border-top: 1px solid rgba(87, 214, 255, 1);
@@ -42,6 +48,9 @@
 
     color: rgba(0, 197, 255, 1);
     background-color: transparent;
+    @media only screen and (max-width: 1439px) {
+        align-self: center;
+    }
 
     &__text {
         margin: 0px;

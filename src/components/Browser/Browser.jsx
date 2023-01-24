@@ -6,9 +6,7 @@ function Browser() {
     return (
         <div className='browser'>
             <BrowserText />
-            <div className='shadow__container'>
-                <div className='shadowl'></div>
-            </div>
+            <div className='shadowl'></div>
         </div>
     );
 }

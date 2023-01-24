@@ -1,35 +1,57 @@
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     height: 150px;
     margin-top: 87px;
 
     background: #171717;
+    @media only screen and (max-width: 1439px) {
+        flex-direction: column;
+        align-items: center;
 
-    .logo__white {
+        margin-top: 58px;
         width: 360px;
-        height: 38px;
-        margin-left: 150px;
-        background-image: url(../../pictures/logo/WhiteLogo.png);
-        background-repeat: no-repeat;
+        height: 458px;
     }
 
     &__container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
 
-        width: 100%;
-        margin-right: 87px;
+        width: 1440px;
+        @media only screen and (max-width: 1439px) {
+            flex-direction: column;
+            align-items: center;
+    
+            margin-right: 0px;
+            width: 212px;
+        }
+
+        .logo__white {
+            width: 212px;
+            height: 38px;
+            margin-left: 150px;
+            background-image: url(../../pictures/logo/WhiteLogo.png);
+            background-repeat: no-repeat;
+            @media only screen and (max-width: 1439px) {
+                margin-top: 56px;
+                margin-left: 0px;
+            }
+        }
 
         .footer-list {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @media only screen and (max-width: 1439px) {
+                flex-direction: column;
+                align-items: center;
+            }
     
             .list-item {
                 font-family: 'Roboto';
@@ -39,21 +61,43 @@
                 line-height: 14px;
     
                 color: rgba(255, 255, 255, 0.5);
-    
-                .arrow {
-                    font-weight: 900;
-                    padding-left: 5px;
-                }
             }
         }
     
         .left {
             width: 242px;
             margin-left: 15px;
+            @media only screen and (max-width: 1439px) {
+                width: 185px;
+                height: 43px;
+                margin-top: 20px;
+                margin-left: 0px;
+            }
         }
     
         .right {
             width: 424px;
+            margin-left: 21.5%;
+            @media only screen and (max-width: 1439px) {
+                order: -1;
+                width: 185px;
+                height: 133px;
+                margin-left: 0px;
+            }
+
+            .list-item:nth-child(1) {
+                display: none;
+
+                @media only screen and (max-width: 1439px) {
+                    display: list-item;
+                }
+            }
+
+            .list-item:nth-child(4) {
+                @media only screen and (max-width: 1439px) {
+                    order: -1;
+                }
+            }
         }
     }
 }

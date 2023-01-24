@@ -3,6 +3,11 @@
         height: 593px;
 
         margin-top: 30px;
+        @media only screen and (max-width: 1439px) {
+            margin-top: 58px;
+            width: 360px;
+            height: 1700px;
+        }
 
         .shadow {
             position: absolute;
@@ -13,11 +18,19 @@
 
             background: rgba(0, 197, 255, 0.15);
             filter: blur(78px);
+            @media only screen and (max-width: 1439px) {
+                display: none;
+            }
         }
         .subscriptiones-rates {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            @media only screen and (max-width: 1439px) {
+                height: 1700px;
+                flex-direction: column;
+                align-items: center;
+            }
 
             .rate {
                 display: flex;
@@ -31,10 +44,18 @@
                 background: #1F2631;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 5px;
+                @media only screen and (max-width: 1439px) {
+                    width: 335px;
+                    margin-top: 0px;
+                    padding-left: 24px;
+                }
 
                 .text-wrapper {
                     padding-left: 10px;
                     padding-top: 76px;
+                    @media only screen and (max-width: 1439px) {
+                        padding-left: 0px;
+                    }
 
                     &__header {
                         font-family: 'Roboto';
@@ -76,6 +97,9 @@
                     height: 100%;
 
                     padding-bottom: 47px;
+                    @media only screen and (max-width: 1439px) {
+                        padding-bottom: 51px;
+                    }
                 }
             }
 

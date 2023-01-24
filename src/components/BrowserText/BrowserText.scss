@@ -4,6 +4,12 @@
     width: 480px;
 
     margin-left: 137px;
+    @media only screen and (max-width: 1439px) {
+        width: 282px;
+        height: 750px;
+
+        margin-left: 0px;
+    }
 
     .section-head {
         margin-top: 25px;
@@ -11,6 +17,9 @@
 
     &__text {
         margin-top: 90px;
+        @media only screen and (max-width: 1439px) {
+            margin-top: 394px;
+        }
 
         .text {
             margin: 0px;
@@ -28,5 +37,8 @@
     .button {
         width: 153px;
         margin-top: 60px;
+        @media only screen and (max-width: 1439px) {
+            margin-top: 72px;
+        }
     }
 }

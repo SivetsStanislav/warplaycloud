@@ -5,22 +5,30 @@
     align-items: center;
     width: 1440px;
     margin: auto;
+    @media only screen and (max-width: 1439px) {
+        margin-top: 58px;
+        width: 360px;
+    }
 
     &__container {
-        width: 664.58px;
-        height: 383.98px;
-
-        margin-top: 35px;
-    }
-    
-    .wrapper {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-    }
-    
-    .wrapper img {
-        height: auto;
-        width: 100%;
+        width: 725px;
+        height: 500px;
+
+        background: url(../../pictures/siteImages/Server.png) no-repeat;
+        background-position: left 0 top 57px;
+        @media only screen and (max-width: 1439px) {
+            width: 555px;
+            height: 365px;
+            background-size: contain;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
