@@ -6,18 +6,27 @@ import Modal from '../Modal/Modal';
 import './RegistrationForm.scss';
 
 function RegistrationForm() {
-    const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [placeholderUser, setPlaceholderUser] = useState("Почта / Телефон");
+    const [placeholderPass, setPlaceholderPass] = useState("Пароль");
     const [checked, setChecked] = useState(false);
-    const [userName, setUserName] = useState('')
+    const [userName, setUserName] = useState('');
+    const [password, setPass] = useState('');
+    const [backgroundColourUser, setbackgroundColourUser] = useState({background: '#FFFFFF'});
+    const [backgroundColourPass, setbackgroundColourPass] = useState({background: '#FFFFFF'});
     const navigate = useNavigate();
 
-    const errors = {
-        uname: "Неверный логин",
-        pass: "Пароль должен содержать 8-15 символов (числа, латиница)"
-    };
+    const errors = [
+        "Неверный логин",
+        "Пароль, 8-15 символов(0-9, a-Z)"
+    ];
 
     const handleUser = (e) => setUserName(e.target.value)
+    const handlePass = (e) => setPass(e.target.value)
+    const clearInput = () => setUserName('')
+    const clearPass = () => setPass('')
+    const handlePlaceholderUser = () => setPlaceholderUser(errors[0])
+    const handlePlaceholderPass = () => setPlaceholderPass(errors[1])
 
     const navigateReg = () => {
         navigate('/')
@@ -25,15 +34,21 @@ function RegistrationForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
-        var { uname, pass } = document.forms[0];
+        var background = [
+            {background: '#FFFFFF'},
+            {background: 'rgba(252, 169, 169, 1)'}
+        ]
 
         var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         var passFormat = /^[a-zA-Z0-9]+$/;
 
-        if (uname.value.match(mailFormat)) {
-            if (pass.value.match(passFormat) && pass.value.length <= 7) {
-                setErrorMessages({ name: "pass", message: errors.pass });
+        if (userName.match(mailFormat)) {
+            if (password.match(passFormat) && password.length <= 7) {
+                setPlaceholderUser("Почта / Телефон")
+                setbackgroundColourUser(background[0])
+                setbackgroundColourPass(background[1])
+                handlePlaceholderPass();
+                clearPass();
             } else {
             setIsSubmitted(true);
             setTimeout(() => {
@@ -41,40 +56,38 @@ function RegistrationForm() {
             }, 3000);
           }
         } else {
-            setErrorMessages({ name: "uname", message: errors.uname });
+            handlePlaceholderUser();
+            setbackgroundColourUser(background[1])
+            clearInput();
+            clearPass();
         }
     };
-
-    const renderErrorMessage = (name) =>
-        name === errorMessages.name && (
-            <div className="error">{errorMessages.message}</div>
-        );
 
     const renderForm = (
         <div className="form-container">
             <form className='form-main' onSubmit={handleSubmit}>
                 <div className="input-container">
                     <input
-                        className="input"
+                        className="input-user"
                         type="text"
-                        name="uname"
                         value={userName}
                         onChange={(userName) => handleUser(userName)}
-                        placeholder="Почта / Телефон"
+                        placeholder={placeholderUser}
+                        style={backgroundColourUser}
                         required
                     />
-                    {renderErrorMessage("uname")}
                 </div>
                 <div className="input-container">
                     <input
-                        className="input"
+                        className="input-pass"
                         type="password"
-                        name="pass"
-                        placeholder="Пароль"
+                        value={password}
+                        onChange={(password) => handlePass(password)}
+                        placeholder={placeholderPass}
+                        style={backgroundColourPass}
                         maxLength="15"
                         required
                     />
-                    {renderErrorMessage("pass")}
                 </div>
                 <div className="button-container">
                     <input
